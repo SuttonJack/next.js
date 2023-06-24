@@ -14,6 +14,7 @@ export const ServerInsertedHTMLContext =
   React.createContext<ServerInsertedHTMLHook | null>(null as any)
 
 export function useServerInsertedHTML(callback: () => React.ReactNode): void {
+  console.log('===== useServerInsertedHTML ====== ')
   const addInsertedServerHTMLCallback = useContext(ServerInsertedHTMLContext)
   // Should have no effects on client where there's no flush effects provider
   if (addInsertedServerHTMLCallback) {

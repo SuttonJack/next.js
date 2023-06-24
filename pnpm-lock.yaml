@@ -1,17 +1,5 @@
 lockfileVersion: 5.4
 
-overrides:
-  webpack: 5.86.0
-  browserslist: 4.20.2
-  caniuse-lite: 1.0.30001406
-  '@types/node': 20.2.5
-  '@babel/core': 7.18.0
-  '@babel/parser': 7.18.0
-  '@babel/types': 7.18.0
-  '@babel/traverse': 7.18.0
-  '@types/react': 18.2.7
-  '@types/react-dom': 18.2.4
-
 importers:
 
   .:
@@ -375,6 +363,27 @@ importers:
       term-size: 3.0.2
       webpack-bundle-analyzer: 4.6.1
       webpack-stats-plugin: 1.1.0
+
+  examples/with-stitches:
+    specifiers:
+      '@stitches/react': 1.2.8
+      '@types/node': ^18.0.6
+      '@types/react': ^18.0.15
+      '@types/react-dom': ^18.0.6
+      next: link:/Users/jacksutton/next.js/packages/next
+      react: 18.2.0
+      react-dom: 18.2.0
+      typescript: ^4.7.4
+    dependencies:
+      '@stitches/react': 1.2.8_react@18.2.0
+      next: link:../../packages/next
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    devDependencies:
+      '@types/node': 18.16.18
+      '@types/react': 18.2.7
+      '@types/react-dom': 18.2.4
+      typescript: 4.8.2
 
   packages/create-next-app:
     specifiers:
@@ -6648,6 +6657,14 @@ packages:
     dependencies:
       '@sinonjs/commons': 1.8.6
 
+  /@stitches/react/1.2.8_react@18.2.0:
+    resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
+    peerDependencies:
+      react: '>= 16.3.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
   /@surma/rollup-plugin-off-main-thread/2.2.3:
     resolution: {integrity: sha512-lR8q/9W7hZpMWweNiAKU7NQerBnzQQLvi8qnTDU/fxItPhtZVMbPV3lbCwjhIlNBe9Bbr5V+KHshvWmVSG9cxQ==}
     dependencies:
@@ -7365,6 +7382,10 @@ packages:
     dependencies:
       '@types/node': 20.2.5
       form-data: 3.0.1
+    dev: true
+
+  /@types/node/18.16.18:
+    resolution: {integrity: sha512-/aNaQZD0+iSBAGnvvN2Cx92HqE5sZCPZtx2TsK+4nvV23fFe09jVDvpArXr2j9DnYlzuU9WuoykDDc6wqvpNcw==}
     dev: true
 
   /@types/node/20.2.5:
